@@ -17,16 +17,18 @@ def div(a, b):
         print("Ділення на нуль неможливе")
 
 
-a = int(input("Введіть перше число: "))
-b = int(input("Введіть друге число: "))
-symbol = input("Введіть математичний знак (+, -, /, *): ")
-if symbol == "+":
-    sum(a, b)
-elif symbol == "-":
-    sub(a, b)
-elif symbol == "/":
-    div(a, b)
-elif symbol == "*":
-    mult(a, b)
-else:
-    print("Ви ввели неправильний математичний знак.")
+while True:
+    a = int(input("Введіть перше число: "))
+    b = int(input("Введіть друге число: "))
+    symbol = input("Введіть математичний знак (+, -, /, *): ")
+    if symbol == "+":
+        sum(a, b)
+    elif symbol == "-":
+        sub(a, b)
+    elif symbol == "/":
+        div(a, b)
+    elif symbol == "*":
+        mult(a, b)
+    else:
+        print("Ви ввели неправильний математичний знак.")
+        break
