@@ -1,20 +1,27 @@
-def sum(a, b):
-    print(a + b)
+def sum(x, y):
+    print(x + y)
 
 
-def sub(a, b):
-    print(a - b)
+def sub(x, y):
+    print(x - y)
 
 
-def mult(a, b):
-    print(a * b)
+def mult(x, y):
+    print(x * y)
 
 
-def div(a, b):
-    if b != 0:
-        print(a / b)
+def div(x, y):
+    if y != 0:
+        print(x / y)
     else:
         print("Ділення на нуль неможливе")
+
+
+def div_all(x, y):
+    if y != 0:
+        print(x // y)
+    else:
+        print("Ціле ділення на нуль неможливе")
 
 
 while True:
@@ -29,6 +36,10 @@ while True:
         div(a, b)
     elif symbol == "*":
         mult(a, b)
+    elif symbol == "//":
+        div_all(a, b)
+    elif symbol == "**":
+        pow(a, b)
     else:
         print("Ви ввели неправильний математичний знак.")
         break
