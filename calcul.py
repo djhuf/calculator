@@ -27,7 +27,7 @@ def div_all(x, y):
 while True:
     a = int(input("Введіть перше число: "))
     b = int(input("Введіть друге число: "))
-    symbol = input("Введіть математичний знак (+, -, /, *): ")
+    symbol = input("Введіть математичний знак (+, -, /, *, //, **): ")
     if symbol == "+":
         sum(a, b)
     elif symbol == "-":
